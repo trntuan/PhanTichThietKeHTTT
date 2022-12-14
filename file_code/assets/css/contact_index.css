@@ -1,0 +1,74 @@
+.heading_contact {
+    margin: 10px 0 0 20px;
+    font-size: 1.8em;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+
+.content-table_contact {
+    border-collapse: collapse;
+    margin: 25px 20px;
+    font-size: 1.2em;
+    min-width: 900px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.content-table_contact .header_table .header_table--tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+}
+
+.content-table_contact .contact_header,
+.content-table_contact .contact_content-item {
+    padding: 12px 15px;
+}
+
+.content-table_contact .table_information .table_information--tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.content-table_contact .table_information .table_information--tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.content-table_contact .table_information .table_information--tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+.content-table_contact .table_information .table_information--tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+}
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+@media (max-width: 700px) {
+    .content_contact {
+        width: 100%;
+        overflow-x: auto;
+    }
+}

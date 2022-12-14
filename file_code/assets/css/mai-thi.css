@@ -1,0 +1,74 @@
+:root{
+    --bg1:#9b59b6;
+    --bg2:#3498db;
+    --bg :#D7E1EC;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.infos-maithi {
+    width: 350px;
+    height: 450px;
+    border-radius: 10px;
+    background: linear-gradient(var(--bg1), var(--bg2));
+}
+
+.infos-maithi > img {
+    width:200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid #ffffff;
+    margin: 20px auto;
+    display: block;
+    cursor: pointer;
+    position: relative;
+}
+
+.infos-maithi > h2 {
+    margin: 12px auto;
+    color: #fffffF;
+    text-align: center;
+}
+
+.infos-maithi {
+    margin: 0 auto;
+}
+.infos-maithi p {
+    text-align: center;
+    color: #ffff;
+    margin: 0 30px 12px;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 30px 12px;
+}
+
+.btn-container button {
+    height: 35p;
+    width: 150px;
+    border: none;
+    margin-right: 12px;
+    border-radius: 5px;
+    columns: #333333;
+    cursor: pointer;
+}
+.btn-container button:hover{
+    transform: scale(0.95);
+    
+}
+.icon-social {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+} 
+.icon-social i {
+    padding: 12px;
+    color: var(--bg1);
+    background: #FFF;
+    border-radius: 50%;
+    margin: 7px 15px ;
+}

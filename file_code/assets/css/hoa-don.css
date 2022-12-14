@@ -1,0 +1,237 @@
+.size-title {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin: 0 20px 20px;
+}
+
+.receipt-table{
+    width: 100%;
+
+}
+
+.receipt-table tr{
+    border-bottom: 1px solid #e4eaf1;
+}
+.receipt-table td{
+    padding: 20px 10px 20px 20px;
+    white-space: nowrap;
+}
+.receipt-table td:first-child{
+    width: 60px;
+    min-width: 60px;
+    max-width: 60px;
+}
+.receipt-table td:last-child{
+    width: 170px;
+    min-width: 170px;
+    max-width: 170px;
+}
+/* .receipt-table td:nth-child(3){
+    width: 300px;
+    min-width: 300px;
+    max-width: 300px;
+} */
+.receipt-table th{
+    width: 100%;
+    text-align: left;
+    font-size: 16px;
+    /* font-weight: bold; */
+    color: #0d0d3c;
+    display: block;
+    margin-bottom: 20px;
+}
+.receipt-table input[type="checkbox"]{
+    cursor: pointer; 
+    position: relative;
+}
+.receipt-title input[type="checkbox"]{
+    border: 1px solid gray;
+}
+.receipt-title input[type="checkbox"]:after{
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    top: 50%; 
+    left: 140%;
+    transform: translateY(-50%);
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    
+    border-top: 5px solid grey;
+}
+.receipt-title{
+    font-weight: bold;
+}
+
+.un-paid {
+    padding: 5px;
+    background: #FFC58B;
+    border-radius: 20px;
+}
+.un-ship {
+    padding: 5px;
+    background: #FFEA8A;
+    border-radius: 20px;
+}
+.paid{
+    padding: 5px;
+    background: #059862;
+    color: white;
+    border-radius: 20px;
+}
+
+.table-overflow{
+    overflow: auto;
+}
+.table-overflow::-webkit-scrollbar {
+    display: none;
+  }
+.receipt-comand--title{
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    display: inline-block;
+    border-bottom: 2px solid #1d49ba;
+}
+
+.receipt-comand{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.comand--btn{
+    display: flex;
+    justify-content: flex-end;
+}
+.comand--btn > button{
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #F6F5FA;
+    position: relative;
+    margin-right: 10px;
+}
+
+.comand--btn > button:hover{
+    background-color: #E1E3E7;
+}
+
+.receipt-table tbody{
+    position: relative;
+}
+.receipt-table td:first-child{
+    position: sticky;
+    left: 0;
+    background-color: white;
+}
+
+.receipt-table td:nth-child(2){
+    width: 150px;
+    position: sticky;
+    left: 60px;
+    background-color: white;
+}
+.receipt-table td:last-child{
+    width: 150px;
+    position: sticky;
+    right: 0;
+    background-color: white;
+}
+@media screen and (max-width: 1279px) {
+    .admin-content.isactive .receipt-table td{
+        background-color: lightgray;
+        opacity: 0.5;
+    }
+}
+
+.hd{
+    max-width: unset;
+    font-size: 20px;
+}
+
+.receipt-link {
+    color: #0d0d3c;
+}
+
+.detial-info {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    /* align-items: center; */
+}
+
+.info-customer {
+
+    padding: 20px;
+    width: 50%;
+    border-radius: 10px;
+    border: 1px solid #007AE1;
+}
+.info-receipt{
+    border: 1px solid #007AE1;
+    padding: 20px;
+    width: 45%;
+    border-radius: 10px;
+}
+.detial-info p > b {
+    font-weight: bold;
+    padding-right: 5px;
+}
+.detial-info p {
+    margin-bottom: 10px;
+}
+
+.detail-content {
+    margin-top: 40px;
+}
+
+.detail-content table{
+    width: 100%;
+    font-size: 18px;
+}
+
+.detail-content > table > tbody > tr:first-child{
+    background: #007AE1;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+.detail-content > table > tbody > tr > td{
+    padding: 20px;
+}
+
+.detail-content > table > tbody > tr:not(:last-child){
+    border-bottom: 1px solid #e4eaf1;
+}
+
+.detail-comand {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 40px;
+}
+
+.detail-comand--btn{
+    display: block;
+    width: 120px;
+    height: 40px;
+    padding: 10px;
+    background-color: #007AE1;
+    text-align: center;
+    margin-left: 10px;
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.detail-comand--btn:last-child{
+    background-color: #f5f6fa;
+    color: black;
+}
+
+.detail-comand--btn:hover{
+    opacity: 0.8;
+}

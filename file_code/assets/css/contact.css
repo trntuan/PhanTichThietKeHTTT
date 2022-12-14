@@ -1,0 +1,228 @@
+@import url("http://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.contactUs {
+  position: relative;
+  width: 100%;
+}
+
+/* content */
+.form {
+  grid-area: form;
+}
+.info {
+  grid-area: info;
+}
+.map {
+  grid-area: map;
+}
+
+.contact {
+  padding: 40px;
+  background: #fff;
+  box-shadow: 0 5px rgba(0, 0, 0, 0.15);
+}
+.contactBox {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas:"map info" "form form";
+  grid-gap: 20px;
+  row-gap: 60px;
+  margin-top: 20px;
+}
+
+.contact h3 {
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  color: #1b262c;
+  font-weight: 700;
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+/* form */
+.form {
+  /* background: #dcd6f7; */
+  box-shadow: inset 0 200px 0 white, 1px 2px 4px rgb(31 32 33 / 33%);
+  border-radius: 16px;
+  border: 1px solid #0C713D;
+}
+
+.formBox {
+  position: relative;
+  width: 100%;
+}
+.formBox .row50 {
+  display: flex;
+  gap: 20px;
+}
+.inputBox {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.formBox .row100 .inputBox {
+  width: 100%;
+}
+.inputBox label {
+  color: #2B2E4A;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: 600;
+  font-size: 1.1em;
+}
+.inputBox input {
+  padding: 10px;
+  font-size: 1.1em;
+  outline: none;
+  border: 1px solid #436192;
+  border-radius: 5px;
+}
+
+.inputBox textarea {
+  padding: 10px;
+  font-size: 1.1em;
+  outline: none;
+  border: 1px solid #436192;
+  resize: none;
+  min-height: 220px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.inputBox input[type="submit"] {
+  background: #1d386e;
+  color: #F0F0F0;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1em;
+  max-width: 200px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 14px 15px;
+  margin: 0 auto;
+  margin-top: 10px;
+  max-height: 50px;
+}
+
+.inputBox ::placeholder {
+  color: #999;
+}
+
+/* message invalid */
+.inputBox.invalid input {
+  border-color: #f33a58;
+}
+
+.inputBox.invalid .messageError {
+  color: #e64141;
+}
+
+.messageError {
+  font-size: 1.1em;
+  line-height: 1.6rem;
+  padding: 6px 0 0;
+  
+}
+/* info */
+.contact.info {
+  /* background: #2D4059; */box-shadow: inset 0 200px 0 white, 1px 2px 4px rgb(31 32 33 / 33%);
+  border-radius: 16px;
+  border: 1px solid #0C713D;
+}
+
+.info h3 {
+  color: #2B2E4A;
+}
+
+.info .infoBox div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.info .infoBox div span {
+  min-width: 40px;
+  height: 40px;
+  color: #1b262c;
+  /* background: #50577a; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.info .infoBox div p {
+  color: #1b262c;
+  font-size: 1.1em;
+}
+.info .infoBox div a {
+  color: #1b262c;
+  text-decoration: none;
+  font-size: 1.1em;
+}
+
+.social {
+  margin-top: 40px;
+  display: flex;
+}
+.social li {
+  list-style: none;
+  margin-right: 15px;
+}
+.social li a {
+  font-size: 2em;
+  color: #1b262c;
+}
+.social li a:hover {
+  color: #1b262c;
+}
+
+.map {
+  padding: 0;
+  border-radius: 16px;
+    overflow: hidden;
+}
+.map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+/* responsive */
+@media (max-width: 991px) {
+  .contactUs {
+    padding: 20px;
+  }
+  .contactBox {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "form" "info" "map";
+  }
+
+  .formBox .row50 {
+    display: flex;
+    gap: 0;
+    flex-direction: column;
+  }
+  .inputBox {
+    width: 100%;
+  }
+  .contact {
+    padding: 30px;
+  }
+  .map {
+    min-height: 300px;
+    padding: 0;
+  }
+}

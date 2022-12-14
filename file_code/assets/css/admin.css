@@ -1,0 +1,342 @@
+.login-body {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: #F0F0F1;
+}
+
+.login {
+    overflow: hidden;
+    max-width: 400px;
+    margin: 5vh auto 0;
+}
+
+.login-title{
+    font-size: 32px;
+    color: #0C713D;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.login-content{
+    width: 100%;
+    background: white;
+    padding: 30px 20px;
+    border-radius: 16px;
+}
+.login-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.login-label{
+    font-size: 16px;
+    color: #0D0D3C;
+    margin-bottom: 10px;
+}
+
+.login-input{
+    width: 100%;
+    height: 35px;
+    border: 1px solid #0D0D3C;
+    outline: none;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 8px;
+}
+
+.login-btn{
+    padding: 10px 20px;
+    border: 1px solid #0D0D3C;
+    color: white;
+    background: #0C713D;
+    border-radius: 8px;
+    display: block;
+    cursor: pointer;
+    margin: 0 auto;
+    font-size: 16px;
+}
+
+.login-back{
+    margin-top: 20px;
+    font-size: 16px;
+    color: #000;
+    text-align: right;
+}
+
+
+img.admin-search-icon {
+    position: absolute;
+    background: #0C713D;
+    width: 40px;
+    height: 40px;
+    box-sizing: border-box;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+}
+
+.login-back:hover > a{
+    padding-bottom: 2px;
+    border-bottom: 1px solid #0C713D;
+}
+
+body{
+    position: relative;
+}
+.admin{
+    position: relative;
+}
+.admin-sidebar {
+    background: #0C713D;
+    width: 300px;
+    margin-top: 71px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    overflow: auto;
+    transform: translateX(-100%);
+    z-index: 1000;
+    transition: all 0.25s linear;
+}
+
+.admin-sidebar-logo {
+    display: flex;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-bottom: 15px;
+    align-items: center;
+    border-bottom: 1px solid white;
+    justify-content: space-between;
+    padding: 10px 30px 10px 30px;
+}
+img.admin-sidebar-img {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+.admin-sidebar-logo > span{
+    font-size: 18px;
+    font-weight: bold;
+    color: #0C713D;
+}
+
+ul.admin-sidebar-list {
+    margin-top: 10px;
+    padding: 20px;
+}
+li.admin-sidebar-item > a{
+    display: flex;
+    align-items: center;
+}
+li.admin-sidebar-item > a > .admin-sidebar-icon{
+    width: 30px;
+    height: 30px;
+    display: block;
+    margin-right: 20px;
+}
+
+li.admin-sidebar-item {
+    padding: 20px 0;
+    margin-bottom: 10px;
+}
+
+span.admin-sidebar-desc {
+    font-size: 16px;
+    color: white;
+}
+
+li.admin-sidebar-item:hover {
+    opacity: 0.8;
+}
+
+.admin-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0px 2px 2px lightgrey;
+    background-color: white;
+    position: fixed;
+    z-index: 1000;
+}
+p.admin-avatar-name {
+    font-size: 18px;
+    color: #0D0D3C;
+    font-weight: bold;
+}
+.admin-main {
+    /* width: calc(100% - 300px);
+    margin-left: 300px; */
+    width: 100%;
+    position: relative;
+}
+
+.admin-search{
+    width: 30%; 
+    position: relative;
+    margin-left: 60px;
+}
+
+input.admin-search-input{
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid #0D0D3C;
+    padding: 20px 40px 20px 20px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.admin-search-icon {
+    position: absolute;
+    background: #0C713D;
+    width: 40px;
+    height: 100%;
+    box-sizing: border-box;
+    color: white;
+    /* padding: 5px; */
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+    border: 0;
+}
+
+.admin-search-icon > img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+}
+
+.admin-avatar {
+    margin-right: 60px;
+    display: flex;
+    align-items: center;
+}
+
+img.admin-avatar-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+
+.admin-content{
+    padding-top: 80px;
+    position: absolute;
+    /* width: calc(100% - 250px);
+    margin-left: 250px; */
+    width: 100%;
+    margin-left: 0;
+    height: auto;
+    background: transparent;
+    transition: all .25s linear;
+}
+
+button.admin-logout-btn {
+    height: 35px;
+    width: 35px;
+    border: 0;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-left: 15px;
+    cursor: pointer;
+}
+button.admin-logout-btn > i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.admin-sidebar--toggle{
+    border-radius: 10px;
+    border: 1px solid #0C713D;
+    color: #0C713D;
+    cursor: pointer;
+    padding: 10px;
+    transition: all .25s linear;
+}
+.admin-sidebar--toggle:hover{
+    background-color: #0C713D;
+    color: white;
+    transition: all .25s linear;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    flex-flow: row nowrap;
+    
+}
+.active{
+    transition: all .25s linear;
+    transform: translateX(0%);
+}
+.isactive{
+    transition: all .25s linear;
+    width: calc(100% - 300px);
+    margin-left: 300px;
+}
+.admin-container{
+    padding: 0 20px;
+}
+.admin-header >.flex > form button.admin-logout-btn {
+    display: none;
+}
+@media screen and (max-width: 1024px){
+.flex{
+    gap:0;
+}
+.admin-sidebar{
+    width: 200px;
+}
+.admin-content{
+    width: 100%;
+    margin-left: 0;
+}
+.isactive{
+    background-color: lightgray;
+    opacity: 0.5;
+}
+}
+@media screen and (max-width: 767px){
+    .admin-sidebar-logo{
+        padding: 10px 0px 10px 0px;
+        width: 50%;
+    }
+    .admin-sidebar-logo span{
+        white-space: nowrap;
+    }
+    .admin-search, .admin-avatar img{
+        display: none;
+    }
+    .flex{
+        flex-flow: row-reverse;
+        justify-content: center;
+    gap: 30px;
+    }
+    button.admin-logout-btn{
+        display: none;
+    }
+    .admin-header >.flex > form button.admin-logout-btn {
+        display: block;
+    }
+    .admin-header{
+        display: block;
+    padding: 0 40px;
+    }
+
+}
+
+.admin-sidebar::-webkit-scrollbar {
+    display: none;
+}
+

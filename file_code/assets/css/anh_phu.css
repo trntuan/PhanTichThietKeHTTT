@@ -1,0 +1,184 @@
+.content-profile {
+  display: flex;
+  background: #dbe2ef;
+}
+.card-profile {
+  width: 100%;
+  max-width: 700px;
+  background: #c3bef0;
+  margin: 110px auto 44px;
+  border-radius: 15px;
+  box-shadow: 0 8px 60px -10px #3339;
+}
+.img-profile {
+  width: 150px;
+  height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  transform: translateY(-50%);
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: 0 5px 50px 0 #142850, 0 0 0 7px #27496d;
+  transition: all 300ms;
+}
+
+.profile {
+  margin-top: -35px;
+  padding: 0 20px;
+  text-align: center;
+  padding-bottom: 40px;
+  transition: all 300ms;
+}
+.profile-name {
+  font-weight: 700;
+  font-size: 34px;
+  color: #2b2e4a;
+  margin-bottom: 15px;
+}
+.profile-text {
+  font-weight: 500;
+  font-size: 22px;
+  margin-bottom: 15px;
+  margin-top: 7px;
+}
+i.fa-thumbtack {
+  margin: 0 5px;
+}
+.profile-address {
+  font-size: 22px;
+}
+
+.load {
+  position: relative;
+  top: 4em;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /*change these sizes to fit into your project*/
+  width: 100px;
+  height: 100px;
+  margin: 16px 0;
+}
+.load hr {
+  border: 0;
+  margin: 0;
+  width: 40%;
+  height: 40%;
+  position: absolute;
+  border-radius: 50%;
+  animation: spin 2s ease infinite;
+}
+
+.load :first-child {
+  background: #19a68c;
+  animation-delay: -1.5s;
+}
+.load :nth-child(2) {
+  background: #f63d3a;
+  animation-delay: -1s;
+}
+.load :nth-child(3) {
+  background: #fda543;
+  animation-delay: -0.5s;
+}
+.load :last-child {
+  background: #193b48;
+}
+
+@keyframes spin {
+  0%,
+  100% {
+    transform: translate(0);
+  }
+  25% {
+    transform: translate(160%);
+  }
+  50% {
+    transform: translate(160%, 160%);
+  }
+  75% {
+    transform: translate(0, 160%);
+  }
+}
+
+.profile-social {
+  margin-top: 25px;
+}
+.profile-social a {
+  display: inline-flex;
+  width: 55px;
+  height: 55px;
+  margin: 20px;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 30px;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: all 300ms;
+}
+.profile-social .fb-anhphu {
+  background: linear-gradient(45deg, #359, #07d);
+  box-shadow: 0 4px 30px #26a8;
+}
+.profile-social .ig-anhphu {
+  background: linear-gradient(45deg, #45f, #f11);
+  box-shadow: 0 4px 30px #b449;
+}
+.profile-social .github-anhphu {
+  background: linear-gradient(45deg, #333, #667);
+  box-shadow: 0 4px 30px #3449;
+}
+.fb-anhphu:hover, .ig-anhphu:hover , .github-anhphu:hover {
+  transform: scale(1.2);
+}
+.profile-button {
+  margin-top: 40px;
+}
+.btn-info {
+  min-width: 201px;
+  min-height: 55px;
+  margin: 15px 35px;
+  border-radius: 50px;
+  border: none;
+  color: #e9eef7;
+  cursor: pointer;
+  transition: all 300ms;
+}
+.btn-info > a {
+  text-decoration: none;
+  color: #e9eef7;
+  font-size: 19px;
+  font-weight: 700;
+}
+.btn-blue {
+  background: linear-gradient(45deg, #1af, #07c);
+  box-shadow: 0 4px 30px #17d6;
+}
+.btn-orange {
+  background: linear-gradient(45deg, #d15, #d52);
+  box-shadow: 0 4px 30px #d245;
+}
+.btn-blue:hover {
+  box-shadow: 0 4px 30px #17db;
+}
+.btn-orange:hover {
+  box-shadow: 0 4px 30px #d24b;
+}
+.btn-info:hover {
+  transform: translateY(-5px);
+}
+
+@media screen and (max-width: 786px) {
+  .card-profile {
+    margin: 140px 20px 40px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .btn-info {
+    margin: 0;
+    margin-bottom: 16px;
+    width: 100%;
+    max-width: 350px;
+  }
+}

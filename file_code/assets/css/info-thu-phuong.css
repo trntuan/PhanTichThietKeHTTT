@@ -1,0 +1,80 @@
+.info-phuong {
+	background: url(../images/nen.jpg) no-repeat center center fixed;
+	background-size: cover;
+	margin-top: auto;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+}
+
+.info-phuong img{
+	margin-top: 20px;
+    width: 150px;
+	height: 150px;
+	border-radius: 100%;
+	border: 2px solid #fff;
+	box-shadow: red 0px 2px 8px 0px; 
+}
+
+.info-phuong h1{
+    display: inline-block;
+	font-size: 1.2em;
+	font-weight: bold;
+	border-radius: 1em;
+	background-color: rgb(250, 9, 9) ;
+	color: #fff;
+	padding: 0.3em 0.4em;
+	border: 2px solid #fffa;
+}
+
+.button ul {
+	box-sizing: border-box;
+	list-style: none;
+	margin: 0 auto;
+	padding: 50px;
+	text-align: center;
+	padding: auto;
+
+}
+
+.button ul > li {
+	background-color: #fffa;
+    border-radius: 25px;
+    padding: 0.5px;
+    margin: 5px 0;
+    align-items: center;
+    display: flex;
+    display: inline-block;
+}
+
+.button ul > li > a {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-content: center;
+	gap: 0;
+	color: black;
+	text-decoration: none;
+	font-size: 20px;
+	align-items: center;
+	padding: 5px;
+	
+}
+
+.button ul > li > a > img {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-content: center;
+}
+
+.cuoi p {
+
+	text-align: center;
+	color: rgb(16, 14, 14);
+	font-size: larger;
+}
