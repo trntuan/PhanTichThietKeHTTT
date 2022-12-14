@@ -9,5 +9,5 @@
 7.	Nguyễn Tuấn Kiệt
 8.	Phạm Minh Đức
 9.	Ngô Trung Kiên
-10.Lê Quang Chí
+10. Lê Quang Chí
 
